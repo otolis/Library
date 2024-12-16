@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.bookContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.bookCard {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.bookCard h3 {
+    margin: 0 0 10px;
+}
+
+.bookCard p {
+    margin: 5px 0;
+}
+
+.bookCard button {
+    margin: 5px 0;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.bookCard button:hover {
+    background-color: #0056b3;
+}
+
+button {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+dialog {
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+dialog form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+dialog .formButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+dialog button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+dialog button:hover {
+    background-color: #0056b3;
+}
