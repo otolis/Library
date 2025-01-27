@@ -1,18 +1,21 @@
 const myLibrary = [];
 let bookIdCounter = 0;
 
-function Book(title, author, pages, hasRead) {
-    this.id = bookIdCounter++;
+class Book{
+    constructor(title, author, pages, hasRead) {
+    this.id = bookIdCounter++
     this.title = title;
     this.author = author;
     this.pages = pages;
     this.hasRead = hasRead;
+    }
+    toggleReadStatus(){
+        this.hasRead=!this.hasRead;
+    }
 }
 
 
-Book.prototype.toggleReadStatus = function () {
-    this.hasRead = !this.hasRead;
-};
+
 
 
 function addBookToLibrary(title, author, pages, hasRead) {
